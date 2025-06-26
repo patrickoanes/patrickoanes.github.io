@@ -4,14 +4,16 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="icon" href="assets/images/logo.svg" type="image/svg+xml" />
+    <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
   </head>
 <body>
     <header class="bg-white">
   <nav class="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8" aria-label="Global">
     <div class="flex lg:flex-1">
       <a href="#" class="-m-1.5 p-1.5">
-        <span class="sr-only">Your Company</span>
-        <img class="h-8 w-auto" src="https://tailwindcss.com/plus-assets/img/logos/mark.svg?color=indigo&shade=600" alt="" />
+        <span class="sr-only">Patrick Oanes</span>
+        <span class="text-xl font-bold text-indigo-600">Patrick Oanes</span>
       </a>
     </div>
     <div class="flex lg:hidden">
@@ -28,9 +30,6 @@
       <a href="#works" class="text-sm/6 font-semibold text-gray-900">Works</a>
       <a href="#contact" class="text-sm/6 font-semibold text-gray-900">Contact</a>
     </div>
-    <div class="hidden lg:flex lg:flex-1 lg:justify-end">
-      <a href="#" class="text-sm/6 font-semibold text-gray-900">Log in <span aria-hidden="true">&rarr;</span></a>
-    </div>
   </nav>
   <!-- Mobile menu, show/hide based on menu open state. -->
   <div class="lg:hidden" role="dialog" aria-modal="true">
@@ -39,8 +38,8 @@
     <div class="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-white p-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
       <div class="flex items-center justify-between">
         <a href="#" class="-m-1.5 p-1.5">
-          <span class="sr-only">Your Company</span>
-          <img class="h-8 w-auto" src="https://tailwindcss.com/plus-assets/img/logos/mark.svg?color=indigo&shade=600" alt="" />
+          <span class="sr-only">Patrick Oanes</span>
+          <span class="text-xl font-bold text-indigo-600">Patrick Oanes</span>
         </a>
         <button type="button" class="-m-2.5 rounded-md p-2.5 text-gray-700">
           <span class="sr-only">Close menu</span>
@@ -57,9 +56,6 @@
             <a href="#works" class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50">Works</a>
             <a href="#contact" class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50">Contact</a>
           </div>
-          <div class="py-6">
-            <a href="#" class="-mx-3 block rounded-lg px-3 py-2.5 text-base/7 font-semibold text-gray-900 hover:bg-gray-50">Log in</a>
-          </div>
         </div>
       </div>
     </div>
@@ -73,21 +69,20 @@
     <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
       <!-- First Row: Image Left, Text Right -->
       <div class="order-2 lg:order-1 flex justify-center lg:justify-start">
-        <div class="w-64 h-64 rounded-full bg-gradient-to-br from-indigo-500 to-purple-600 flex items-center justify-center shadow-2xl">
-          <div class="text-white text-center">
-            <svg class="w-24 h-24 mx-auto mb-4" fill="currentColor" viewBox="0 0 20 20">
-              <path fill-rule="evenodd" d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z" clip-rule="evenodd" />
-            </svg>
-            <p class="text-lg font-semibold">Your Photo</p>
-          </div>
+        <div class="w-64 h-64 rounded-full overflow-hidden shadow-2xl">
+          <img src="assets/images/profile.jpg" alt="Patrick Oanes" class="w-full h-full object-cover" />
         </div>
       </div>
       <div class="order-1 lg:order-2 text-center lg:text-left">
         <h1 class="text-4xl lg:text-6xl font-bold text-gray-900 mb-6">
-          Welcome to My Portfolio
+          Welcome to my portfolio.
         </h1>
         <p class="text-xl text-gray-600 mb-8 leading-relaxed">
-          I'm a passionate developer and creative professional dedicated to crafting exceptional digital experiences. Let me show you what I can do.
+          I'm a mid-level Software Engineer specializing in Laravel, CodeIgniter, PHP, and React Native. I'm passionate about solving real-world problems through clean, efficient, and scalable code — whether that means optimizing legacy systems, building from scratch, or improving existing applications.
+
+          With a strong focus on web and mobile development, I bring both backend reliability and user-focused functionality to every project I take on.
+          
+          Take a look at my work — I'm excited to show you what I can do.
         </p>
         <div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
           <button class="bg-indigo-600 text-white px-8 py-3 rounded-lg font-semibold hover:bg-indigo-700 transition-colors">
@@ -111,10 +106,140 @@
         Learn more about my background, skills, and what drives me to create amazing digital experiences.
       </p>
     </div>
-    <div class="bg-gray-100 rounded-2xl p-8 text-center">
-      <p class="text-lg text-gray-700">
-        This is the About section. Add your personal story, background, and professional journey here.
-      </p>
+    
+    <!-- Tech Stack Subsection -->
+    <div class="mb-16">
+      <h3 class="text-2xl font-bold text-gray-900 mb-8 text-center">Tech Stack</h3>
+      <div class="tech-slider overflow-hidden">
+        <div class="tech-slider-track flex animate-scroll">
+          <!-- Tech Stack Images - Add your actual tech stack images here -->
+          <div class="tech-item flex-shrink-0 mx-8">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/laravel/laravel-plain.svg" alt="Laravel" class="w-16 h-16" />
+          </div>
+          <div class="tech-item flex-shrink-0 mx-8">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/codeigniter/codeigniter-plain.svg" alt="CodeIgniter" class="w-16 h-16" />
+          </div>
+          <div class="tech-item flex-shrink-0 mx-8">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-plain.svg" alt="PHP" class="w-16 h-16" />
+          </div>
+          <div class="tech-item flex-shrink-0 mx-8">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React" class="w-16 h-16" />
+          </div>
+          <div class="tech-item flex-shrink-0 mx-8">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-plain.svg" alt="JavaScript" class="w-16 h-16" />
+          </div>
+          <div class="tech-item flex-shrink-0 mx-8">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-plain.svg" alt="HTML5" class="w-16 h-16" />
+          </div>
+          <div class="tech-item flex-shrink-0 mx-8">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-plain.svg" alt="CSS3" class="w-16 h-16" />
+          </div>
+          <div class="tech-item flex-shrink-0 mx-8">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-plain.svg" alt="MySQL" class="w-16 h-16" />
+          </div>
+          <!-- Duplicate items for seamless loop -->
+          <div class="tech-item flex-shrink-0 mx-8">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/laravel/laravel-plain.svg" alt="Laravel" class="w-16 h-16" />
+          </div>
+          <div class="tech-item flex-shrink-0 mx-8">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/codeigniter/codeigniter-plain.svg" alt="CodeIgniter" class="w-16 h-16" />
+          </div>
+          <div class="tech-item flex-shrink-0 mx-8">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-plain.svg" alt="PHP" class="w-16 h-16" />
+          </div>
+          <div class="tech-item flex-shrink-0 mx-8">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React" class="w-16 h-16" />
+          </div>
+          <div class="tech-item flex-shrink-0 mx-8">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-plain.svg" alt="JavaScript" class="w-16 h-16" />
+          </div>
+          <div class="tech-item flex-shrink-0 mx-8">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-plain.svg" alt="HTML5" class="w-16 h-16" />
+          </div>
+          <div class="tech-item flex-shrink-0 mx-8">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-plain.svg" alt="CSS3" class="w-16 h-16" />
+          </div>
+          <div class="tech-item flex-shrink-0 mx-8">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-plain.svg" alt="MySQL" class="w-16 h-16" />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Certifications Subsection -->
+    <div class="mb-16">
+      <h3 class="text-2xl font-bold text-gray-900 mb-8 text-center">Certifications</h3>
+      <div class="cert-slider overflow-hidden">
+        <div class="cert-slider-track flex animate-scroll">
+          <!-- Certification Images - Add your actual certification images here -->
+          <div class="cert-item flex-shrink-0 mx-4">
+            <img src="https://via.placeholder.com/200x150/4F46E5/FFFFFF?text=Certification+1" alt="Certification 1" class="w-48 h-36 object-cover rounded-lg shadow-md" />
+          </div>
+          <div class="cert-item flex-shrink-0 mx-4">
+            <img src="https://via.placeholder.com/200x150/7C3AED/FFFFFF?text=Certification+2" alt="Certification 2" class="w-48 h-36 object-cover rounded-lg shadow-md" />
+          </div>
+          <div class="cert-item flex-shrink-0 mx-4">
+            <img src="https://via.placeholder.com/200x150/059669/FFFFFF?text=Certification+3" alt="Certification 3" class="w-48 h-36 object-cover rounded-lg shadow-md" />
+          </div>
+          <div class="cert-item flex-shrink-0 mx-4">
+            <img src="https://via.placeholder.com/200x150/DC2626/FFFFFF?text=Certification+4" alt="Certification 4" class="w-48 h-36 object-cover rounded-lg shadow-md" />
+          </div>
+          <!-- Duplicate items for seamless loop -->
+          <div class="cert-item flex-shrink-0 mx-4">
+            <img src="https://via.placeholder.com/200x150/4F46E5/FFFFFF?text=Certification+1" alt="Certification 1" class="w-48 h-36 object-cover rounded-lg shadow-md" />
+          </div>
+          <div class="cert-item flex-shrink-0 mx-4">
+            <img src="https://via.placeholder.com/200x150/7C3AED/FFFFFF?text=Certification+2" alt="Certification 2" class="w-48 h-36 object-cover rounded-lg shadow-md" />
+          </div>
+          <div class="cert-item flex-shrink-0 mx-4">
+            <img src="https://via.placeholder.com/200x150/059669/FFFFFF?text=Certification+3" alt="Certification 3" class="w-48 h-36 object-cover rounded-lg shadow-md" />
+          </div>
+          <div class="cert-item flex-shrink-0 mx-4">
+            <img src="https://via.placeholder.com/200x150/DC2626/FFFFFF?text=Certification+4" alt="Certification 4" class="w-48 h-36 object-cover rounded-lg shadow-md" />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Employments Subsection -->
+    <div class="mb-16">
+      <h3 class="text-2xl font-bold text-gray-900 mb-8 text-center">Employments</h3>
+      <div class="emp-slider overflow-hidden">
+        <div class="emp-slider-track flex animate-scroll">
+          <!-- Company Images - Add your actual company images here -->
+          <div class="emp-item flex-shrink-0 mx-6">
+            <img src="https://via.placeholder.com/150x100/1F2937/FFFFFF?text=Company+1" alt="Company 1" class="w-36 h-24 object-cover rounded-lg shadow-md" />
+          </div>
+          <div class="emp-item flex-shrink-0 mx-6">
+            <img src="https://via.placeholder.com/150x100/374151/FFFFFF?text=Company+2" alt="Company 2" class="w-36 h-24 object-cover rounded-lg shadow-md" />
+          </div>
+          <div class="emp-item flex-shrink-0 mx-6">
+            <img src="https://via.placeholder.com/150x100/4B5563/FFFFFF?text=Company+3" alt="Company 3" class="w-36 h-24 object-cover rounded-lg shadow-md" />
+          </div>
+          <div class="emp-item flex-shrink-0 mx-6">
+            <img src="https://via.placeholder.com/150x100/6B7280/FFFFFF?text=Company+4" alt="Company 4" class="w-36 h-24 object-cover rounded-lg shadow-md" />
+          </div>
+          <div class="emp-item flex-shrink-0 mx-6">
+            <img src="https://via.placeholder.com/150x100/9CA3AF/FFFFFF?text=Company+5" alt="Company 5" class="w-36 h-24 object-cover rounded-lg shadow-md" />
+          </div>
+          <!-- Duplicate items for seamless loop -->
+          <div class="emp-item flex-shrink-0 mx-6">
+            <img src="https://via.placeholder.com/150x100/1F2937/FFFFFF?text=Company+1" alt="Company 1" class="w-36 h-24 object-cover rounded-lg shadow-md" />
+          </div>
+          <div class="emp-item flex-shrink-0 mx-6">
+            <img src="https://via.placeholder.com/150x100/374151/FFFFFF?text=Company+2" alt="Company 2" class="w-36 h-24 object-cover rounded-lg shadow-md" />
+          </div>
+          <div class="emp-item flex-shrink-0 mx-6">
+            <img src="https://via.placeholder.com/150x100/4B5563/FFFFFF?text=Company+3" alt="Company 3" class="w-36 h-24 object-cover rounded-lg shadow-md" />
+          </div>
+          <div class="emp-item flex-shrink-0 mx-6">
+            <img src="https://via.placeholder.com/150x100/6B7280/FFFFFF?text=Company+4" alt="Company 4" class="w-36 h-24 object-cover rounded-lg shadow-md" />
+          </div>
+          <div class="emp-item flex-shrink-0 mx-6">
+            <img src="https://via.placeholder.com/150x100/9CA3AF/FFFFFF?text=Company+5" alt="Company 5" class="w-36 h-24 object-cover rounded-lg shadow-md" />
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 </section>
@@ -152,6 +277,27 @@
     </div>
   </div>
 </section>
+
+<style>
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-scroll {
+  animation: scroll 30s linear infinite;
+}
+
+.tech-slider-track:hover,
+.cert-slider-track:hover,
+.emp-slider-track:hover {
+  animation-play-state: paused;
+}
+</style>
 
 </body>
 </html>
